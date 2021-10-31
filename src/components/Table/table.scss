@@ -1,0 +1,51 @@
+.tableContainer {
+  background: white;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.MuiDataGrid-columnsContainer {
+  background: #f4f4f4;
+}
+
+.MuiDataGrid-columnSeparator {
+  opacity: 0 !important;
+}
+
+.MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable {
+  border-left: 1px solid #c0c0c0 !important;
+}
+
+// .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--alignRight.MuiDataGrid-columnHeader--sortable.MuiDataGrid-columnHeader--numeric {
+//   border-right: 1px solid #c0c0c0 !important;
+// }
+.MuiDataGrid-columnHeader {
+  border-left: 1px solid #c0c0c0 !important;
+}
+.css-xfmtxh-MuiDataGrid-root .MuiDataGrid-cell--textLeft {
+  text-align: center !important;
+  font-family: "Roboto";
+  font-size: 11px;
+  border-left: 1px solid #c0c0c0;
+}
+.MuiDataGrid-cell.MuiDataGrid-cell--textRight {
+  text-align: center !important;
+  font-family: "Roboto";
+  font-size: 11px;
+  border-left: 1px solid #c0c0c0;
+}
+.textboxHeader-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  margin-bottom: 36px;
+}
+.textboxHeader-search input {
+  height: 34px;
+  min-width: 530px !important;
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border: 1px solid #c0c0c0;
+  padding: 0px;
+  margin: 0px;
+}

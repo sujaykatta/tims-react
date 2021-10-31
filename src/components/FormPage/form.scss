@@ -1,0 +1,194 @@
+.myChallenges {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.textBox {
+  margin-top: 20px;
+  width: 250px !important;
+}
+.bx--date-picker.bx--date-picker--single .bx--date-picker__input {
+  width: 250px !important;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #706e6b;
+  padding: 0 2px;
+}
+.outerFormContainer {
+  display: flex;
+  width: 100%;
+}
+.outerForm {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  background: #ffffff;
+}
+.titleHeader {
+  color: #161616;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Roboto;
+  letter-spacing: 0px;
+}
+.titleSubHeader {
+  color: #161616;
+  font-size: 14px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+.textFieldContainer {
+  color: #3e3e3c;
+  font-size: 12px;
+  font-family: Roboto;
+  margin-bottom: 3px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 150px;
+}
+.button-inner {
+  margin: 0 10px;
+  width: 200px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.bx--text-input {
+  border: 1px solid #c0c0c0 !important;
+}
+.bx--date-picker__input {
+  border: 1px solid #c0c0c0 !important;
+}
+.bx--list-box__field {
+  border: 1px solid #c0c0c0 !important;
+}
+.table-container {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+.bx--data-table-header {
+  background: #ffffff !important;
+}
+.bx--data-table tbody {
+  background: #ffffff !important;
+}
+.bx--data-table td,
+.bx--data-table tbody th {
+  background: #ffffff !important;
+}
+.bx--btn--primary:hover {
+  background-color: #22599c !important;
+  opacity: 80% !important;
+}
+.bx--btn--primary {
+  text-align: center;
+  background-color: #22599c !important;
+  color: #ffffff;
+}
+
+.textboxHeader input {
+  height: 34px;
+  min-width: 180px !important;
+  margin-right: 3px;
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border: 1px solid #c0c0c0;
+  padding: 0px;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #706e6b;
+  padding: 0 2px;
+}
+.dropdown select {
+  height: 36px;
+  min-width: 180px !important;
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border: 1px solid #c0c0c0;
+  padding: 1px 2px !important;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #706e6b;
+  padding: 0 2px;
+}
+.MuiFormControl-root.MuiTextField-root.css-e13as6-MuiFormControl-root-MuiTextField-root {
+  height: 36px !important;
+  min-width: 180px !important;
+  background: #f4f4f4 0% 0% no-repeat padding-box !important;
+  padding: 0px !important;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #706e6b;
+  padding: 0 2px;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  height: 36px !important;
+  min-width: 180px !important;
+  padding: 0px !important;
+  background: #f4f4f4 0% 0% no-repeat padding-box !important;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #706e6b;
+  padding: 0 2px;
+}
+.MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 0px !important;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #706e6b;
+  padding: 0 2px;
+}
+.form-container-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.innerForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn-submit input[type="submit"] {
+  background: var(--unnamed-color-22599c) 0% 0% no-repeat padding-box;
+  background: #22599c 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 178px;
+  height: 37px;
+  color: white;
+  font-size: 14px;
+  border: 0px;
+  font-family: "Roboto";
+  margin: 0px 5px;
+}
+.btn-submit-reset input[type="Reset"] {
+  background: #ffffff;
+  border: 1px solid #22599c;
+  opacity: 1;
+  width: 178px;
+  height: 37px;
+  color: #22599c;
+  font-size: 14px;
+  font-family: "Roboto";
+  margin: 0px 5px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
