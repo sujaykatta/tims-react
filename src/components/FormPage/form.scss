@@ -166,6 +166,7 @@
   justify-content: space-between;
 }
 .btn-submit input[type="submit"] {
+  cursor: pointer;
   background: var(--unnamed-color-22599c) 0% 0% no-repeat padding-box;
   background: #22599c 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -178,6 +179,7 @@
   margin: 0px 5px;
 }
 .btn-submit-reset input[type="Reset"] {
+  cursor: pointer;
   background: #ffffff;
   border: 1px solid #22599c;
   opacity: 1;
@@ -189,6 +191,7 @@
   margin: 0px 5px;
 }
 .btn-container {
+  cursor: pointer;
   display: flex;
   justify-content: center;
 }

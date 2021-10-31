@@ -11,19 +11,20 @@
 .side-header-text {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 14px;
   font-family: Roboto;
-
+  cursor: pointer;
   letter-spacing: 0.27px;
   color: #ffffff;
   padding: 10px;
 }
 .side-header-text-open {
   border-bottom: 1px solid white;
+  cursor: pointer;
   border-top: 1px solid white;
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 14px;
   font-family: Roboto;
   letter-spacing: 0.27px;
   color: #ffffff;
@@ -31,7 +32,7 @@
 }
 .dropdown-text {
   margin-left: 20px;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   padding: 10px 0 10px 0;
 }

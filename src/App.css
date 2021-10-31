@@ -3,6 +3,7 @@
 }
 .App-container {
   background: #e5e5e5;
+  height: 100%;
 }
 .App-logo {
   height: 40vmin;
