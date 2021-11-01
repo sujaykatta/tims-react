@@ -17,6 +17,12 @@ const Sidebar: React.FC<ISidebarProp> = ({ onSelection }) => {
   const [open5, setOpen5] = useState(false);
   const [open6, setOpen6] = useState(false);
 
+  const [poEntry, setPoEntry] = useState(false);
+  useEffect(() => {
+    if (!open2) {
+      setPoEntry(false);
+    }
+  }, [open2]);
   return (
     <div className="sidebar-containers">
       <div className="side-header-text">Dashboard</div>
@@ -105,7 +111,15 @@ const Sidebar: React.FC<ISidebarProp> = ({ onSelection }) => {
       </div>
       {open2 && (
         <>
-          <div className="dropdown-text" onClick={() => onSelection("po")}>
+          <div
+            className={
+              !poEntry ? "dropdown-text" : "dropdown-text dropdown-text-open"
+            }
+            onClick={() => {
+              onSelection("po");
+              setPoEntry(true);
+            }}
+          >
             PO Entry
           </div>
           <div className="dropdown-text">PO Status</div>

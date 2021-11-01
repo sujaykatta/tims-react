@@ -94,7 +94,7 @@ const Form = () => {
         </div>
         <form className="innerForm">
           <div className="form-container-text">
-            <div>
+            <div className="textboxContainer">
               <div className="textFieldContainer">PO ID</div>
               <div className="textboxHeader">
                 <input
@@ -104,13 +104,13 @@ const Form = () => {
                 />
               </div>
             </div>
-            <div>
+            <div className="textboxContainer">
               <div className="textFieldContainer">PO Number</div>
               <div className="textboxHeader">
                 <input type="text" name="name" />
               </div>
             </div>
-            <div>
+            <div className="textboxContainer">
               <div className="textFieldContainer">Receiving Date</div>
               <TextField
                 id="date"
@@ -122,7 +122,7 @@ const Form = () => {
                 }}
               />
             </div>
-            <div className="dropdown">
+            <div className="dropdown textboxContainer">
               <div className="textFieldContainer">Program</div>
               <select>
                 <option value="TB">TB</option>
@@ -138,7 +138,7 @@ const Form = () => {
                 <option value="Program8">Program 8</option>
               </select>
             </div>
-            <div className="dropdown">
+            <div className="dropdown textboxContainer">
               <div className="textFieldContainer">Vendor</div>
               <select>
                 <option value="Vendor1">Vendor 1</option>

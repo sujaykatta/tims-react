@@ -8,6 +8,10 @@
   margin-top: 2px;
   padding: 30px 0 0 0;
 }
+.side-header-text:hover {
+  background: #386aa6;
+  opacity: 100%;
+}
 .side-header-text {
   display: flex;
   justify-content: space-between;
@@ -31,9 +35,17 @@
   padding: 10px;
 }
 .dropdown-text {
-  margin-left: 20px;
   font-size: 14px;
   color: #ffffff;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 20px;
   cursor: pointer;
+}
+.dropdown-text:hover {
+  background: #386aa6;
+  opacity: 100%;
+  // width: 80%;
+}
+.dropdown-text-open {
+  background: #1b477d;
+  border-left: 4px solid #ffc800;
 }
