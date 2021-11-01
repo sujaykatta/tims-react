@@ -2,9 +2,15 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./sidebar.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-const Sidebar = () => {
+
+interface ISidebarProp {
+  index?: any;
+  onSelection: (challenge: any) => void;
+  // onShare?: (challenge: IChallengeResponse) => void;
+}
+const Sidebar: React.FC<ISidebarProp> = ({ onSelection }) => {
   const [open, setOpen] = useState(false);
-  const [open1, setOpen1] = useState(true);
+  const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
@@ -18,6 +24,13 @@ const Sidebar = () => {
         className={!open ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen(!open);
+          setOpen1(false);
+          setOpen2(false);
+          setOpen3(false);
+          setOpen4(false);
+          setOpen5(false);
+          setOpen6(false);
+          onSelection("none");
         }}
       >
         Emergency Response
@@ -43,6 +56,13 @@ const Sidebar = () => {
         className={!open1 ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen1(!open1);
+          setOpen(false);
+          setOpen2(false);
+          setOpen3(false);
+          setOpen4(false);
+          setOpen5(false);
+          setOpen6(false);
+          onSelection("none");
         }}
       >
         Inquiry
@@ -67,6 +87,13 @@ const Sidebar = () => {
         className={!open2 ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen2(!open2);
+          setOpen1(false);
+          setOpen(false);
+          setOpen3(false);
+          setOpen4(false);
+          setOpen5(false);
+          setOpen6(false);
+          onSelection("none");
         }}
       >
         Inventory Receiving
@@ -78,7 +105,9 @@ const Sidebar = () => {
       </div>
       {open2 && (
         <>
-          <div className="dropdown-text">PO Entry</div>
+          <div className="dropdown-text" onClick={() => onSelection("po")}>
+            PO Entry
+          </div>
           <div className="dropdown-text">PO Status</div>
         </>
       )}
@@ -87,6 +116,13 @@ const Sidebar = () => {
         className={!open3 ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen3(!open3);
+          setOpen1(false);
+          setOpen2(false);
+          setOpen(false);
+          setOpen4(false);
+          setOpen5(false);
+          setOpen6(false);
+          onSelection("none");
         }}
       >
         Maintenance
@@ -111,6 +147,13 @@ const Sidebar = () => {
         className={!open4 ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen4(!open4);
+          setOpen1(false);
+          setOpen2(false);
+          setOpen3(false);
+          setOpen(false);
+          setOpen5(false);
+          setOpen6(false);
+          onSelection("none");
         }}
       >
         Master File
@@ -135,6 +178,13 @@ const Sidebar = () => {
         className={!open5 ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen5(!open5);
+          setOpen1(false);
+          setOpen2(false);
+          setOpen3(false);
+          setOpen4(false);
+          setOpen(false);
+          setOpen6(false);
+          onSelection("none");
         }}
       >
         Orders
@@ -159,6 +209,13 @@ const Sidebar = () => {
         className={!open6 ? "side-header-text" : "side-header-text-open"}
         onClick={() => {
           setOpen6(!open6);
+          setOpen1(false);
+          setOpen2(false);
+          setOpen3(false);
+          setOpen4(false);
+          setOpen5(false);
+          setOpen(false);
+          onSelection("none");
         }}
       >
         Resource Management
